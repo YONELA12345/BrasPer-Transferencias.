@@ -1,0 +1,8 @@
+.ifonrelpa{
+    background-image:url('/static/img/fondo1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: "Quicksand", sans-serif;
+    color:rgba(255,255,255,1);
+    font-size:28px;
+}

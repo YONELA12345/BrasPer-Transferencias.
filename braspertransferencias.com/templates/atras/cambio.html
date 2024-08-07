@@ -1,0 +1,59 @@
+{% block customCss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/cambio.css')}}">
+{% endblock %}
+{% block body %}
+<div class="contenedorhome">
+    <div style="display: flex;height: 100%;">
+        <div class="contenedor">
+            <div style="color:rgba(255,255,255,1)">
+                {% with messages=get_flashed_messages() %} 
+                    {%if messages%}
+                        <div class="alert alert-danger" role="alert">
+                            {% for messages in messages %} 
+                                {{messages}} 
+                            {% endfor %}
+                        </div>
+                    {% endif %} 
+                {% endwith %}
+                <form action="/cambiacambio" method="POST" enctype="multipart/form-data">
+                    <div class="contenedores">
+                        <input type="text" name="id" value="{{cambio[0]}}" hidden>
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Sol a Dolar</div>
+                        <input type="text" name="soladol" value="{{cambio[1]}}">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Sol a Real</div>
+                        <input type="text" name="solareal" value="{{cambio[2]}}">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Dolar a Sol</div>
+                        <input type="text" name="usdasol" value="{{cambio[3]}}">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Dolar a Real</div>
+                        <input type="text" name="usdareal" value="{{cambio[4]}}">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Real a Sol</div>
+                        <input type="text" name="realapen" value="{{cambio[5]}}">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Real a Dolar</div>
+                        <input type="text" name="realausd" value="{{cambio[6]}}">
+                    </div>
+                    <div>
+                        <input type="submit" value="Guardar" style="width: 100%;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height:40px;"></div>
+{% endblock %}
+{% block JS %}
+    
+{% endblock%}

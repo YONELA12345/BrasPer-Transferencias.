@@ -1,0 +1,59 @@
+.libro{
+    display:none;
+    transition: all 0.4s;
+}
+.libromos{
+    display:block;
+}
+.foinpi{
+    background-image:url('/static/img/fondo1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.txttitpie{
+    text-align: center;
+    color:rgba(255,255,255,1);
+    font-size:30px;
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+}
+.txtpienu{
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+}
+.piecontot{
+    display:flex;flex-wrap:wrap;margin:auto;color:rgba(255,255,255,1);
+}
+a{
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#btnsiguientese a{
+    color:rgb(0, 0, 0);
+    font-size:18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.logospies{
+    width:50px;
+}
+
+.txtimg{
+    width: auto; /* Permite que la imagen mantenga su proporción */
+    height: auto;
+    margin-left: 16px;
+} 
+
+.txtli {display: flex;
+        align-items: center;
+    }

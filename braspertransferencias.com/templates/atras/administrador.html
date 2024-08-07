@@ -1,0 +1,98 @@
+{% block customCss %}
+<style>
+    input[type=button]{
+        border-radius:5px;
+        background: linear-gradient(grey, white);
+        cursor:pointer;
+    }
+    input[type=button]:hover{
+        border-radius:0px;
+        background:linear-gradient(white,grey);
+    }
+</style>
+{% endblock %}
+<div class="contenedorhome">
+    <div class="flexarriva">
+    <h1>Bienvenido, {{current_user.fullname}}</h1>
+    <a class="btn btn-secondary" href="{{url_for('logout')}}">Cerrar Sesion</a>
+    </div>
+    <div style="display: flex;height: 100%;background: rgba(8,15,62,1);">
+        <div style="width: 20%;height: 100%;background: rgba(8,15,62,1);padding:10px;">
+            <div>
+                <input type="button" value="Tipo de Cambio" id="tipocambio" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Usuarios" id="usuarios" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Agregar Usuarios" id="edusuarios" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Borrar Usuarios" id="bousuarios" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="% Comisiones" id="bocomisiones" style="width:100%" hidden>
+            </div>
+            <div>
+                <input type="button" value="Calc. Inversa" id="boinversa" style="width:100%" hidden>
+            </div>
+            <div>
+                <input type="button" value="Sol a Real" id="penabrl" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Real a Sol" id="brlapen" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Dolar a Real" id="usdabrl" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Real a Dolar" id="brlausd" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Sol a Dolar" id="penausd" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Dolar a Sol" id="usdapen" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Agregar Cupones" id="cupones" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+            <div>
+                <input type="button" value="Ver Cupones" id="vercupones" style="width:100%">
+            </div>
+            <div style="height: 10px;">
+            </div>
+        </div>
+        <div style="width: 80%;">
+            <div id="cont">
+                
+            </div>
+        </div>
+    </div>
+    <div style="height:0px;"></div>
+</div>
+{% block JS %}
+    <script type="text/javascript" src="{{url_for('static',filename='js/administrador.js')}}"></script>
+{% endblock%}

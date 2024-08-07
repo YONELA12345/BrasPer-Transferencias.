@@ -1,0 +1,50 @@
+{% extends './base.html' %} 
+{% block title %} 
+    <title>Login</title> 
+{%endblock%}
+{% block customCss %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/popup.css')}}">
+{% endblock %} {% block body %}
+<div>
+  <main class="form-signin w-100 m-auto">
+    <form class="form-signin" action="/login" method="POST">
+      <center>
+        <img class="mb-4" src="{{ url_for('static', filename='img/logotumiaqpico.png')}}" alt="" width="72" height="72" />
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        <br />
+        {% for messages in messages %}
+        <div class="alert alert-primary alert-dismissible" role="alert">
+          <strong>{{ messages }}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+        </div>
+        {% endfor %}
+        <br />
+        {% endif %} {% endwith %}
+      </center>
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}"><!--En el servidor debe de estar el csrf_toquen sin parentesis//-->
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="username" />
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" />
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">
+        Sign in
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+    </form>
+  </main>
+</div>
+{% endblock %}
+{% block JS %}
+  <script type="text/javascript" src="{{url_for('static',filename='js/popup.js')}}"></script>
+{% endblock%}

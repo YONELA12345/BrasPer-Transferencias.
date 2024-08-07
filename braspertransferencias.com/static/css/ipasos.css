@@ -1,0 +1,9 @@
+.ipafon{
+    background: rgba(255,255,255,1);
+}
+.txttipa{
+    text-align: center;color:rgba(44, 56, 189,1);
+}
+.coninipas{
+    display:flex;flex-wrap:wrap;
+}

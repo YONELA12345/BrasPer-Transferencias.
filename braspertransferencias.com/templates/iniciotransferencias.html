@@ -1,0 +1,24 @@
+{% block customCss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/itransferencias.css')}}">
+{% endblock %}
+<div class="ifontras">
+    <div style="height:35px;"></div>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider_section" data-age="uno">
+                ¡¡Transferencias inmediatas, seguras y directas a la cuenta del destino a una tarifa premium para sus envíos!!
+            </div>
+            <div class="slider_section" data-age="uno">
+                ¡Con BrasPer Transferencias olvídese de las largas esperas para que tus remesas lleguen a su destino!!
+            </div>
+            <div class="slider_section" data-age="uno">
+                Si desea enviar dinero de Brasil a Perú o de Perú a Brasil, comuníquese con nosotros.
+                ¡Compare, pruebe y disfrute nuestro excelente servicio!
+            </div>
+        </div>
+    </div>
+    <div style="height:35px;"></div>
+</div>
+{% block JS %}
+    <script type="text/javascript" src="{{url_for('static',filename='js/iniciotransferencias.js')}}"></script>
+{% endblock%}

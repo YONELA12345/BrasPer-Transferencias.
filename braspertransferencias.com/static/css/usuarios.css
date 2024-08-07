@@ -1,0 +1,23 @@
+.contenedor{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contenedores{
+    display: flex;
+    margin: auto;
+}
+thead{
+    background: rgba(196,196,196,1);
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+.contabla{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+tr{
+    color:rgba(255,255,255,1);
+}

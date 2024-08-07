@@ -1,0 +1,20 @@
+{% extends './base.html' %}
+
+{% block title %}
+<title>HOME</title>
+{% endblock %}
+
+{% block customCss %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/popup.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="alto"></div>
+{% include 'atras/administrador.html' %}
+<div class="alto"></div>
+{% endblock %}
+
+{% block JS %}
+  <script type="text/javascript" src="{{ url_for('static', filename='js/popup.js') }}"></script>
+{% endblock %}

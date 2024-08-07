@@ -1,0 +1,37 @@
+{% block customCss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/usuarios.css')}}">
+{% endblock %}
+<div class="contenedorhome">
+            <div class="contenedor">
+                <div class="contabla">
+                    <table>
+                        <thead>
+                            <tr><td>CODIGO</td><td>PORCENTAJE</td><td>FECHA</td><td></td></tr>
+                        </thead>
+                        {% for users in usu %}
+                        <tbody>
+                            <tr>
+                                <td style="padding: 3px;">
+                                    {{users[1]}}
+                                </td>
+                                <td style="padding: 3px;">
+                                    {{users[2]}}
+                                </td>
+                                <td style="padding: 3px;">
+                                    {{users[4]}}
+                                </td>
+                                <td style="padding: 3px;">
+                                    <a href="borrarcupones?tipo={{users[0]}}">borrar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+                </table>
+                </div>
+            </div>
+    
+    </div>
+</div>
+{% block JS %}
+{% endblock%}

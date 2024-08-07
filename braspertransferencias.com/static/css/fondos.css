@@ -1,0 +1,17 @@
+.bgazulcorporativo{
+    background: rgba(44,56,189,1);
+}
+.fondonegr{
+    background: rgba(0,0,0,1);
+}
+.fondoblan{
+    background: rgba(255,255,255,1);
+}
+.cuadrospasos{
+    padding: 10px; color: rgba(44,56,189,1);font-family: 'Roboto',sans-serif;font-weight: 400;text-align: center;width:300px;margin: auto;
+}
+.imgmapa{
+    width:300px;
+    max-width: 100%;
+    margin: auto;
+}

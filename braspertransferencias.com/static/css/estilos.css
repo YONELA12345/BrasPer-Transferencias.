@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0px;
+}
+.bgcorporativo{
+    background: rgba(44, 56, 189,1);
+}
+.centro{
+    margin: auto;
+}
+.alto15{
+    height: 15px;
+}
+.padding10{
+    padding: 10px;
+}
+.txtcentro{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.alrededor{
+    justify-content: space-between;
+}
+.derecha10{
+    position: relative;
+    left: 100px;
+}
+.flexend{
+    justify-content: flex-end;
+}
+.flexcenter{
+    justify-content: center;
+}
+.cuerpoflex{
+    display:flex;justify-content:center;width: 100%;margin: auto;background: rgba(255,255,0,0);
+}
+.imgpasos{
+    max-width: 100%;
+    width: 200px;
+    margin: auto;
+}
+.altura35{
+    height: 35px;
+}

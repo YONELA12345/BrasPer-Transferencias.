@@ -1,0 +1,36 @@
+.txtroboto{font-family: 'Roboto', sans-serif;}
+.txtsquarepeg{font-family: 'Square Peg', cursive;}
+.fontbebas{font-family: 'Bebas Neue', sans-serif;}
+.txtrojo{
+    color:rgba(255,0,0,1);
+}
+.txtturquesa{
+    color:rgba(146,212,235,1);
+}
+.txtazulcorporativo{
+    color: rgba(44,56,189,1);
+}
+.txt40{
+    font-size: 40px;
+}
+.txt30{
+    font-size: 30px;
+}
+.txt25{
+    font-size: 25px;
+}
+.txt20{
+    font-size: 20px;
+}
+.txtblanco{
+    color: rgba(255,255,255,1);
+}
+.txtnegro{
+    color: rgba(0,0,0,1);
+}
+.txtgrueso{
+    font-weight: bold;
+}
+.txtcentro{
+    text-align: center;
+}

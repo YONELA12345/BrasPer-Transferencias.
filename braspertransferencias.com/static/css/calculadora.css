@@ -1,0 +1,231 @@
+.cajacalculadora{
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-top: 50px;
+    background: rgba(255,255,255,1);
+    width:470px;
+    height: auto;;
+    margin: auto;
+    border-radius:12px;
+    box-shadow: 10px 10px 15px rgba(190,190,190,1);
+}
+.txtcaltitu{
+    /* font-family: 'Bebas Neue', cursive; */
+    padding-top: 20px;
+    font-size:18px;
+    text-align:center;
+    font-weight: bold;
+
+}
+.circuturquesa{
+    width: 90%;
+    border-radius:12px;
+    border:2px solid rgb(189, 189, 189);
+    padding: 2px 2px 2px 2px;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+}
+.cuadrosbanderaflex{
+    width: 0;height: 0;border-right: 10px solid transparent;border-top: 10px solid transparent;border-left: 10px solid transparent;border-bottom: 13px solid #f0ad4e;transform: rotate(180deg);
+}
+.imagenbanderas{
+    width:30px;height:25px;
+}
+.txtbanderas{
+    padding:0px;margin-left:5px;
+}
+.calculadoratitulos{
+    font-weight:bold;font-family: 'Roboto', sans-serif;font-size:15px;
+}
+.calculadoraresultados{
+    font-weight:bold;font-family: 'Roboto', sans-serif;color:#ff0000;
+    font-size:15px;
+}
+.calcrec{
+    font-size:25px;border:0px solid;
+}
+#operaciones{
+    padding: 20px;
+    background:rgba(156,0,0,0);
+}
+#inputmontoenviar{
+    width: 90%;
+    border: none;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    position:relative;
+    left:0px !important;
+}
+#tipototalrecibe{
+    width: 90%;
+    border:none;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    
+}
+#inputmontorecibir{
+    width:60px;
+}
+.circulo{
+    width: 80%;
+    border: solid 2px rgba(146,212,235,1);
+    border-radius: 12px;
+    padding: 10px;
+    margin: auto;
+}
+.circulo input{
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    border:none;
+}
+.nav{
+    /*width: 150px;
+    border: solid 1px;
+    border-radius: 20px;*/
+}
+.nav:hover{
+    border:solid 2px;
+    cursor: pointer;
+}
+.nav:hover >li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+.nav > li{
+    text-align: center;
+    padding: 4px;
+}
+.nav > li > ul{
+    display:none;
+    position:absolute;
+	max-width:100%;
+    float: left;
+    background: rgba(255,255,255,1);
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px;
+    z-index: 2;
+}
+.nav li:hover>ul{
+    display: block;
+}
+.nav > li > ul > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.nav > li > ul > li:hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+.elejirmoneda{
+    width:100%;display:flex;justify-content:flex-start;
+}
+#descripciones{
+    padding:12px;
+}
+.comision{
+    padding: 5px;
+    border-radius: 12px;
+    height: 30px;
+}
+.btns{
+    border-radius:12px;
+    border:1px solid rgba(0,167,196,1);
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255,255,255,1);
+    background: rgba(0,167,196,1);
+    width:130px;
+}
+.btns:hover{
+    background: rgba(0,167,196,0.5);
+    border:2px solid rgba(0,167,196,1);
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+.btncupones{
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    margin:auto;
+    border-radius:12px;
+    width:285px;
+    background:#ffffff;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:35px;
+}
+
+.btncupones .buttoncpn {
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    margin: 1px;
+    border-radius:12px;
+    border: none;
+    background: #4A52D8;
+    grid-template-rows:30px;
+}
+
+.tachado {
+    text-decoration: line-through;
+    text-decoration-color: rgba(0,0,0,1); 
+    text-decoration-thickness: 2px;
+}
+.btnnaranja{
+    background:#FF8000;
+}
+.btnnaranjacup{
+    width:150px !important;
+    font-size:16px;
+    font-family: "Quicksand", sans-serif !important;
+}
+ .inputinvita{
+     width:100%;padding:10px;
+     background-color:#FF8000;
+     border-radius:12px !important;
+     border: solid 0px;
+     font-size:21px;
+     font-weight:bold;
+     color:rgba(255,255,255,1);
+     padding-top:0px;
+     padding-bottom:0px;
+     
+ }
+
+ .inputenviar{
+    width:100%;padding:10px;
+    background-color:#FF8000;
+    border-radius:12px !important;
+    border: solid 0px;
+    font-size:16px;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    padding-top:0px;
+    padding-bottom:0px;
+    
+}
+
+
+.operaciones .btn-change {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 165, 0, 1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}

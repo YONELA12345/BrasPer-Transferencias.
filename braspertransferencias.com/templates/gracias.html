@@ -1,0 +1,23 @@
+{% extends './base.html' %}
+{% block title %} 
+  <title>Agradecimiento Envio Formulario</title> 
+{% endblock %}
+{%block customCss%}
+  <link rel="stylesheet" href="{{url_for('static',filename='./css/gracias.css')}}" />
+{%endblock%} {% block body %}
+  <div>
+    <div class="txtgrueso">
+        <div style="padding:35px">
+            <center>
+              <h1>Gracias Por Contactarnos {{nombre}}</h1>
+              <div>nos comunicaremos a su whatsapp {{whatsapp}}</div>
+              <div>Enviremos correo de confirmaci贸n a: {{correo}}</div>
+              <div>Si NO aparece en su Bandeja de ENTRADA</div>
+              <div>revisar en la carpeta SPAM 贸 correos NO DESEADOS</div>
+          </center>
+      </div>
+    </div>
+  </div>
+  <div style="height: 60px"></div>
+  {% endblock %}
+  

@@ -1,0 +1,17 @@
+.contenedorhome{
+    width:90%;
+    margin:auto;
+}
+.alto{
+    height:30px;
+    background:rgba(255,255,0,0);
+}
+.flexarriva{
+    display:flex;
+    justify-content:space-between;
+}
+@media (orientation:portrait){
+    .contenidohome{
+        width:100%;
+    }
+}

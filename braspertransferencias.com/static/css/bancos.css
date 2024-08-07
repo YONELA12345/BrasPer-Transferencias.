@@ -1,0 +1,10 @@
+#sliderbancos{
+    /* background: rgba(255, 255,0, 1); */
+}
+.cuadrospasos{
+    cursor: pointer;
+    transition: all .2s;
+}
+.cuadrospasos:hover{
+    scale: 1.5;
+}

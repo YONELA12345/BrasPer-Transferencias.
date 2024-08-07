@@ -1,0 +1,19 @@
+.fqui{
+    background-image:url('/static/img/fondo1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.tiqui{
+    text-align: center;
+    color:rgba(255,255,255,1);
+    font-family: "Quicksand", sans-serif;
+    font-size:35px;
+}
+.dequi{
+    padding: 40px;
+    text-align:justify;
+    color:rgba(255,255,255,1);
+    font-size:18px;
+    font-weight:100;
+    font-family: "Quicksand", sans-serif;
+}

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.ifontras{
+    background:rgba(248,182,61,1);
+    font-size:30px;
+    font-family: "Quicksand", sans-serif !import;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:rgba(255,255,255,1) !important;
+}

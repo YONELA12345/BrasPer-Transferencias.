@@ -1,0 +1,23 @@
+.contenedor{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contenedores{
+    display: flex;
+    margin: auto;
+}
+.label{
+    width: 100px;
+    color:rgba(255,255,255,1);
+}
+.labels{
+    color:rgba(0,0,0,1);
+    width:100px;
+}
+form div{
+    padding: 2px;
+}
+#menupag{
+    width: 20%;height: 100%;background: rgba(0,0,0,1);padding:10px;
+}

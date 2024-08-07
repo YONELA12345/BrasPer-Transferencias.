@@ -1,0 +1,39 @@
+{% block customCss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/cambio.css')}}">
+{% endblock %}
+{% block body %}
+<div class="contenedorhome">
+    <div style="display: flex;height: 100%;">
+        <div class="contenedor">
+            <div>
+                {% with messages=get_flashed_messages() %} 
+                    {%if messages%}
+                        <div class="alert alert-danger" role="alert">
+                            {% for messages in messages %} 
+                                {{messages}} 
+                            {% endfor %}
+                        </div>
+                    {% endif %} 
+                {% endwith %}
+                <form action="/nuevocupones" method="POST" enctype="multipart/form-data">
+                    <div class="contenedores">
+                        <div class="label">Agregar c&oacute;digo de Cupones</div>
+                        <input type="text" name="cupones" value="" style="width:200px !important">
+                    </div>
+                    <div class="contenedores">
+                        <div class="label">Agregar Porcentaje</div>
+                        <input type="text" name="porcentaje" value="" style="width:200px !important">
+                    </div>
+                    <div>
+                        <input type="submit" value="Guardar" style="width: 100%;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block JS %}
+    
+{% endblock%}
